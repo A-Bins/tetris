@@ -13,4 +13,6 @@ add_executable(Tetris main.cpp
         Chunk.cpp
         Chunk.h
         Key.cpp
-        Key.h)
+        Key.h
+        Player.cpp
+        Player.h)

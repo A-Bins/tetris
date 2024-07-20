@@ -4,7 +4,6 @@
 #include <fcntl.h>
 #include <Windows.h>
 
-
 using namespace std;
 
 void gotoxy(const short x, const short y) {
@@ -20,28 +19,24 @@ void disableCursor() {
     SetConsoleCursorInfo(console, &ConsoleCursor);
 }
 
-
-
-
-
 void Render::init() {
-    disableCursor();
     _setmode(_fileno(stdout), _O_U16TEXT);
     SetConsoleOutputCP(CP_UTF8);
     SetConsoleCP(CP_UTF8);
-    system("mode con cols=160 lines=40 | title 테트리스 20307 김우균");
+    disableCursor();
+    system("mode con cols=20 lines=20 | title Tetris 20307");
 
 }
 void Render::draw() {
-    system("cls");
+    gotoxy(0, 0);
     int column = 0;
 
-    for (auto& rows: map) {
-        for (auto& row: rows) {
+    for (const auto& rows: map) {
+        for (const auto& row: rows) {
             if (row == 1)
                 wcout << L"■";
             else if (row == 0)
-                wcout << "11";
+                wcout << " ";
             else if (row == 2)
                 wcout << L"□";
         }
@@ -49,7 +44,6 @@ void Render::draw() {
         wcout << endl;
         ++column;
     }
-    wcout <<column;
 }
 
 void Render::queue() {

@@ -1,11 +1,13 @@
 #include "Listener.h"
 
-#include <cstdio>
+#include <conio.h>
 #include <Windows.h>
 
 
 void listen(Listener& listener) {
-    int init = getchar();
+    if (!_kbhit()) return;
+
+    int init = _getch();
     if (init != MAGIC_KEY) {
         if (init == KEY_C) {
             listener.rotate();
@@ -14,7 +16,7 @@ void listen(Listener& listener) {
         return;
     }
 
-    switch (getchar()) {
+    switch (_getch()) {
         default: return;
 
         case UP:

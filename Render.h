@@ -20,6 +20,7 @@ public:
 
     int map[10][10];
 
+
     void init();
     void draw();
     void queue();

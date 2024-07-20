@@ -1,5 +1,9 @@
 #include "Key.h"
 
+#include <iostream>
+
+using namespace std;
+
 void Key::up() {
 
 }

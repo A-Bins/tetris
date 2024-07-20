@@ -79,6 +79,12 @@ build CMakeFiles/Tetris.dir/Key.cpp.obj: CXX_COMPILER__Tetris_unscanned_Debug C$
   OBJECT_DIR = CMakeFiles\Tetris.dir
   OBJECT_FILE_DIR = CMakeFiles\Tetris.dir
 
+build CMakeFiles/Tetris.dir/Player.cpp.obj: CXX_COMPILER__Tetris_unscanned_Debug C$:/Tetris/Player.cpp || cmake_object_order_depends_target_Tetris
+  DEP_FILE = CMakeFiles\Tetris.dir\Player.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Tetris.dir
+  OBJECT_FILE_DIR = CMakeFiles\Tetris.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Tetris
@@ -87,7 +93,7 @@ build CMakeFiles/Tetris.dir/Key.cpp.obj: CXX_COMPILER__Tetris_unscanned_Debug C$
 #############################################
 # Link the executable Tetris.exe
 
-build Tetris.exe: CXX_EXECUTABLE_LINKER__Tetris_Debug CMakeFiles/Tetris.dir/main.cpp.obj CMakeFiles/Tetris.dir/Listener.cpp.obj CMakeFiles/Tetris.dir/Render.cpp.obj CMakeFiles/Tetris.dir/Chunk.cpp.obj CMakeFiles/Tetris.dir/Key.cpp.obj
+build Tetris.exe: CXX_EXECUTABLE_LINKER__Tetris_Debug CMakeFiles/Tetris.dir/main.cpp.obj CMakeFiles/Tetris.dir/Listener.cpp.obj CMakeFiles/Tetris.dir/Render.cpp.obj CMakeFiles/Tetris.dir/Chunk.cpp.obj CMakeFiles/Tetris.dir/Key.cpp.obj CMakeFiles/Tetris.dir/Player.cpp.obj
   FLAGS = -g
   LINK_FLAGS = -static -static-libgcc -static-libstdc++
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
