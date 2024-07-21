@@ -19,6 +19,7 @@ public:
         } {}
 
     int map[10][10];
+    int a = 0;
 
 
     void init();

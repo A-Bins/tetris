@@ -28,17 +28,20 @@ void Render::init() {
 
 }
 void Render::draw() {
+
+
+
     gotoxy(0, 0);
     int column = 0;
 
-    for (const auto& rows: map) {
+    for (const auto& rows: this->map) {
         for (const auto& row: rows) {
             if (row == 1)
-                wcout << L"■";
+                wcout << L"■"; //■
             else if (row == 0)
                 wcout << " ";
             else if (row == 2)
-                wcout << L"□";
+                wcout << L"□"; // □
         }
 
         wcout << endl;
