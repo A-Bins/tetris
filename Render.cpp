@@ -42,6 +42,8 @@ void Render::draw() {
                 wcout << " ";
             else if (row == 2)
                 wcout << L"□"; // □
+            else if (row == 3)
+                wcout << "3";
         }
 
         wcout << endl;

@@ -59,9 +59,9 @@ bool alive = true;
  *
  */
 
-void playerUpdate(Player& player, Render& render) {
+void playerUpdate(Player& player) {
     while (true) {
-        player.update(render);
+        player.update();
         Sleep(100);
     }
 }
@@ -72,14 +72,24 @@ void draw(Render& render) {
         Sleep(100);
     }
 }
+
 int main() {
     Render render;
     render.init();
     Chunk chunk(0, 0, Chunk::I, Chunk::i);
     Player player(2, 0, render, chunk);
 
-    thread playerThread(playerUpdate, ref(player), ref(render));
-    thread drawThread(draw, ref(render));
+    thread playerThread(
+
+        playerUpdate,
+        ref(player)
+    );
+    thread drawThread(
+
+        draw,
+        ref(render)
+
+    );
 
     Key key(player);
     while (alive) {

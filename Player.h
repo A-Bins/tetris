@@ -15,7 +15,8 @@ public:
 
     void moveX(int amount);
     void moveY(int amount);
-    void update(Render& render);
+    void update();
+    bool collide(int exceptX, int exceptY);
 
 private:
     int previousX = x, previousY = y;
