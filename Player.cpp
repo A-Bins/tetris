@@ -22,6 +22,11 @@ void Player::moveY(const int amount) {
     y = except;
 }
 
+void Player::rotate() {
+
+}
+
+
 void Player::update() {
     list<pair<int, int>> temp;
     const int deltaX = x - previousX, deltaY = y - previousY;

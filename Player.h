@@ -15,6 +15,7 @@ public:
 
     void moveX(int amount);
     void moveY(int amount);
+    void rotate();
     void update();
     bool collide(int exceptX, int exceptY);
 
