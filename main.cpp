@@ -111,7 +111,7 @@ void draw(Render& render) {
 int main() {
     Render render;
     render.init();
-    Chunk chunk(0, 0, Chunk::I, Chunk::i);
+    Chunk chunk(Chunk::pivot_i, Chunk::I, Chunk::i);
     Player player(2, 0, render, chunk);
 
     thread playerThread(

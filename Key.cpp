@@ -21,6 +21,6 @@ void Key::left() {
 }
 
 void Key::rotate() {
-
+    player.rotate();
 }
 

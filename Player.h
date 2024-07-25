@@ -7,7 +7,7 @@
 class Player {
 
 public:
-    Player(int x, int y, Render& render, Chunk& chunk): x(x), y(y), render(render), chunk(chunk) {}
+    Player(const int x, const int y, Render& render, Chunk& chunk): x(x), y(y), render(render), chunk(chunk) {}
 
     int x, y;
     Render& render;
@@ -15,7 +15,7 @@ public:
 
     void moveX(int amount);
     void moveY(int amount);
-    void rotate();
+    void rotate() const;
     void update();
     bool collide(int exceptX, int exceptY);
 

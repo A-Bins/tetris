@@ -3,7 +3,7 @@
 
 #define MAGIC_KEY 224    //상하좌우 화살표가 들어올때 선행되어 들어오는 숫자
 #define SPACE 32        //스페이스 키 값
-#define KEY_C 67
+#define KEY_A 97
 
 /**
  * ↑ : 224 -> 72

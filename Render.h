@@ -27,7 +27,6 @@ public:
         } {}
 
     int map[18][18];
-    int a = 0;
 
 
     void init();

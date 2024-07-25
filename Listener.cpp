@@ -10,7 +10,7 @@ void listen(Listener& listener) {
 
     int init = _getch();
     if (init != MAGIC_KEY) {
-        if (init == KEY_C) {
+        if (init == KEY_A) {
             listener.rotate();
         }
 
