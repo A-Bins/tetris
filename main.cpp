@@ -11,6 +11,11 @@ using namespace std;
 
 bool alive = true;
 /**
+ *
+ *
+ *
+ *
+ *
  * 테트리스를 구현하기에 앞서 참고한 자료를 첨부하겠습니다.
  * https://velog.io/@science4588/%ED%85%8C%ED%8A%B8%EB%A6%AC%EC%8A%A4-%EA%B0%9C%EB%B0%9C-2%EC%9D%BC%EC%B0%A8
  *
